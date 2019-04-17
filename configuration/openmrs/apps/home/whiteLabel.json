@@ -7,7 +7,10 @@
   "loginPage": {
     "logo": "/bahmni_config/openmrs/apps/home/CHIDA_logo.png",
     "showHeaderText": true,
-    "showTitleText": false
+    "showTitleText": false,
+    "bottomLogos": [
+      "/bahmni_config/openmrs/apps/home/PKF_logo.png"
+    ]
   },
   "helpLink": {
     "url": "https://bahmni.atlassian.net/wiki/display/BAH/Bahmni+Home"
