@@ -87,7 +87,7 @@
     "type": "config",
     "extensionParams": {
       "searchHandler":"emrapi.sqlSearch.AmbulatoirePatients",
-      "translationKey": "MODULE_LABEL_PRIORITY_KEY",
+      "translationKey": "MODULE_LABEL_AMBULATOIRE_KEY",
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Ambulatoire",
