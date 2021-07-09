@@ -68,43 +68,30 @@
     "order": 1,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsSearchEmergencyPatient": {
-    "id": "bahmni.clinical.patients.search.emergencyPatients",
+  "bahmniClinicalPatientsSearchGeneralPatient": {
+    "id": "bahmni.clinical.patients.search.GénéralPatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
-      "searchHandler":"emrapi.sqlSearch.emergencyPatients",
-      "translationKey": "MODULE_LABEL_EMERGENCY_KEY",
+      "searchHandler":"emrapi.sqlSearch.GénéralPatients",
+      "translationKey": "MODULE_LABEL_GENERAL_KEY",
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
-    "label": "Emergency",
+    "label": "Général",
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsSearchAmbulatoirePatients": {
-    "id": "bahmni.clinical.patients.search.AmbulatoirePatients",
+  "bahmniClinicalPatientsSearchHospitalisationPatients": {
+    "id": "bahmni.clinical.patients.search.HospitalisationPatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
-      "searchHandler":"emrapi.sqlSearch.AmbulatoirePatients",
-      "translationKey": "MODULE_LABEL_AMBULATOIRE_KEY",
+      "searchHandler":"emrapi.sqlSearch.HospitalisationPatients",
+      "translationKey": "MODULE_LABEL_HOSPITALISATION_KEY",
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
-    "label": "Ambulatoire",
+    "label": "Hospitalisation",
     "order": 3,
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalPatientsSearchHospitalisePatients": {
-    "id": "bahmni.clinical.patients.search.HospitaliséPatients",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler":"emrapi.sqlSearch.HospitaliséPatients",
-      "translationKey": "MODULE_LABEL_HOSPITALISE_KEY",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
-    },
-    "label": "Hospitalisé",
-    "order": 4,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchOdontologiePatients": {
@@ -117,7 +104,7 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Odontologie",
-    "order": 5,
+    "order": 4,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchChirurgiePatients": {
@@ -130,7 +117,7 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Chirurgie",
-    "order": 6,
+    "order": 5,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchPediatriePatients": {
@@ -143,7 +130,7 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Pédiatrie",
-    "order": 7,
+    "order": 6,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsSearchPsychiatriePatients": {
@@ -156,7 +143,7 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Psychiatrie",
-    "order": 8,
+    "order": 7,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsHistory": {
