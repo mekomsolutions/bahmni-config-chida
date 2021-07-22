@@ -19,74 +19,65 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-    "adt": {
-    "id": "bahmni.adt",
+  "bahmniIpd": {
+    "id": "bahmni.ipd",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_INPATIENT_KEY",
-    "url": "../adt/",
-    "icon": "icon-bahmni-inpatient",
-    "order": 3,
+    "translationKey": "MODULE_LABEL_BED_MANAGEMENT_KEY",
+    "label": "InPatient",
+    "url": "../bedmanagement/#/home",
+    "icon": "fa-bed",
+    "order": 5,
     "requiredPrivilege": "app:adt"
   },
-"radiologyDocumentUpload": {
-  "id": "bahmni.radiology.document.upload",
-  "extensionPointId": "org.bahmni.home.dashboard",
-  "type": "link",
-  "translationKey": "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY",
-  "url": "../document-upload/?encounterType=RADIOLOGY&topLevelConcept=Ordonnances de radiologie",
-  "icon": "icon-bahmni-radiology",
-  "order": 5,
-  "requiredPrivilege": "app:radiology-upload"
-},
-"patientDocumentUpload": {
-  "id": "bahmni.patient.document.upload",
-  "extensionPointId": "org.bahmni.home.dashboard",
-  "type": "link",
-  "translationKey": "MODULE_LABEL_PATIENT_DOCUMENTS_KEY",
-  "url": "../document-upload/?encounterType=Patient Document&topLevelConcept=Patient Document&defaultOption=Patient file",
-  "icon": "icon-bahmni-documents",
-  "order": 6,
-  "requiredPrivilege": "app:patient-documents"
-},
-"programs": {
-  "id": "bahmni.programs",
-  "extensionPointId": "org.bahmni.home.dashboard",
-  "type": "link",
-  "translationKey": "MODULE_LABEL_PROGRAMS_KEY",
-  "url": "../clinical/#/programs/patient/search",
-  "icon": "icon-bahmni-program",
-  "order": 7,
-  "requiredPrivilege": "app:clinical"
-},
-  "admin": {
-    "id": "bahmni.admin",
+  "radiologyDocumentUpload": {
+    "id": "bahmni.radiology.document.upload",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_ADMIN_KEY",
-    "url": "../admin/#/dashboard/home",
-    "icon": "icon-bahmni-admin",
-    "order":8,
-    "requiredPrivilege": "app:admin"
-},
-  "appointments": {
-    "id": "bahmni.appointment.scheduling",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
-    "url": "../appointments",
-    "icon": "fa fa-calendar",
-    "order": 9,
-    "requiredPrivilege": "app:appointments"
+    "translationKey": "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY",
+    "url": "../document-upload/?encounterType=RADIOLOGY&topLevelConcept=Ordonnances de radiologie",
+    "icon": "icon-bahmni-radiology",
+    "order": 5,
+    "requiredPrivilege": "app:radiology-upload"
   },
-  "implementerInterface": {
-    "id": "bahmni.implementer.interface",
+  "patientDocumentUpload": {
+    "id": "bahmni.patient.document.upload",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY",
-    "url": "/implementer-interface",
-    "icon": "fa fa-pencil-square-o",
-    "order": 10,
-    "requiredPrivilege": "app:implementer-interface"
-  }
+    "translationKey": "MODULE_LABEL_PATIENT_DOCUMENTS_KEY",
+    "url": "../document-upload/?encounterType=Patient Document&topLevelConcept=Patient Document&defaultOption=Patient file",
+    "icon": "icon-bahmni-documents",
+    "order": 6,
+    "requiredPrivilege": "app:patient-documents"
+  },
+    "admin": {
+      "id": "bahmni.admin",
+      "extensionPointId": "org.bahmni.home.dashboard",
+      "type": "link",
+      "translationKey": "MODULE_LABEL_ADMIN_KEY",
+      "url": "../admin/#/dashboard/home",
+      "icon": "icon-bahmni-admin",
+      "order":8,
+      "requiredPrivilege": "app:admin"
+  },
+    "appointments": {
+      "id": "bahmni.appointment.scheduling",
+      "extensionPointId": "org.bahmni.home.dashboard",
+      "type": "link",
+      "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
+      "url": "../appointments",
+      "icon": "fa fa-calendar",
+      "order": 9,
+      "requiredPrivilege": "app:appointments"
+    },
+    "implementerInterface": {
+      "id": "bahmni.implementer.interface",
+      "extensionPointId": "org.bahmni.home.dashboard",
+      "type": "link",
+      "translationKey": "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY",
+      "url": "/implementer-interface",
+      "icon": "fa fa-pencil-square-o",
+      "order": 10,
+      "requiredPrivilege": "app:implementer-interface"
+    }
 }
