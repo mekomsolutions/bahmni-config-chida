@@ -173,6 +173,28 @@
                     "template": "<patient-appointments-dashboard section='config' patient='patient'></patient-appointments-dashboard>"
                 }
             },
+            "reasonForConsultation": {
+                "translationKey": "DASHBOARD_TITLE_REASON_FOR_CONSULTATION_KEY",
+                "type": "vitals",
+                "isObservation": true,
+                "displayOrder": 13,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Motif de consultation"
+                    ],
+                    "showDetailsButton": true,
+                    "numberOfVisits": 2
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Motif de consultation"
+                    ],
+                    "numberOfVisits": 2,
+                    "scope": "latest",
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                }
+            },
             "labResults": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "vitals",
@@ -187,7 +209,7 @@
                         "Crachats"
                     ],
                     "showDetailsButton": true,
-                    "numberOfVisits": 3
+                    "numberOfVisits": 2
                 },
                 "expandedViewConfig": {
                     "conceptNames": [
@@ -197,7 +219,7 @@
                         "Prelevement vaginal",
                         "Crachats"
                     ],
-                    "numberOfVisits": 3,
+                    "numberOfVisits": 2,
                     "scope": "latest",
                     "showDetailsButton": true,
                     "pivotTable": {}
@@ -213,13 +235,13 @@
                         "CHIDA Radiology Orders"
                     ],
                     "showDetailsButton": true,
-                    "numberOfVisits": 3
+                    "numberOfVisits": 2
                 },
                 "expandedViewConfig": {
                     "conceptNames": [
                         "CHIDA Radiology Orders"
                     ],
-                    "numberOfVisits": 3,
+                    "numberOfVisits": 2,
                     "scope": "latest",
                     "showDetailsButton": true,
                     "pivotTable": {}
